@@ -9,6 +9,7 @@ module.exports = {
 				"main-bg": "#040C18",
 				"secondary-bg": "#052D56",
 				"secondary-text": "#3D6184",
+				"half-transparent": "rgba(0, 0, 0, 0.5)",
 			},
 		},
 	},

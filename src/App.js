@@ -8,6 +8,7 @@ function App() {
 			<div className="w-full bg-main-bg overflow-hidden relative text-white">
 				<Navbar />
 				<Hero />
+				<div className="blur-one" />
 			</div>
 		</div>
 	);

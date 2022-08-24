@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.svg";
 import { RiMenuFoldLine } from "react-icons/ri";
 import { RiMenuUnfoldLine } from "react-icons/ri";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
 	const navLinks = [
 		{
@@ -42,10 +42,10 @@ const Navbar = () => {
 
 	return (
 		<motion.nav
-			className="relative w-full z-10"
+			className="relative w-full z-20"
 			initial={{ y: "-100vh", opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
-			transition={{ delay: 0.5, type: "spring", duration: 0.3 }}>
+			transition={{ delay: 0.3, type: "spring", duration: 0.5 }}>
 			<div className="my-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-row justify-between items-center">
 				<div className="logo mr-3">
 					<img
@@ -81,7 +81,7 @@ const Navbar = () => {
 						))}
 					</div>
 				</div>
-				<div className="lg:hidden ">
+				<div className="lg:hidden relative z-[100]">
 					{isOpen ? (
 						<RiMenuUnfoldLine
 							className="text-[1.5rem] md:text-[2rem] cursor-pointer"
@@ -91,7 +91,7 @@ const Navbar = () => {
 						/>
 					) : (
 						<RiMenuFoldLine
-							className="text-[1.5rem] md:text-[2rem] cursor-pointer"
+							className="text-[1.5rem] md:text-[2rem]  cursor-pointer"
 							onClick={() => {
 								setIsOpen(true);
 							}}
@@ -99,36 +99,45 @@ const Navbar = () => {
 					)}
 				</div>
 
-				{/* {isOpen && (
-					<div className="absolute top-10  right-0 bg-white text-main-bg">
-						<div className="nav-links flex flex-col justify-between items-center text-[1rem] 2xl:text-[1.5rem]">
-							<div className="flex flex-col justify-start ">
-								{navLinks.map((navLink, index) => (
-									<Link
-										to={`/${navLink.link}`}
-										key={index}
-										className=" mx-3 px-3 py-2">
-										{navLink.name}
-									</Link>
-								))}
+				<AnimatePresence>
+					{isOpen && (
+						<motion.div
+							className="absolute z-[50] top-10  right-10 bg-secondary-bg text-primary rounded-[5px] shadow-lg"
+							initial={{ x: "100vh", opacity: 0 }}
+							animate={{ x: 0, opacity: 1 }}
+							exit={{ x: "100vh", opacity: 0 }}
+							transition={{ duration: 0.5, type: "spring" }}>
+							<div className="nav-links lg:hidden flex flex-col justify-between items-center text-[1rem] 2xl:text-[1.5rem]">
+								<div className="flex flex-col justify-start ">
+									{navLinks.map((navLink, index) => (
+										<Link
+											to={`/${navLink.link}`}
+											key={index}
+											className=" ml-2 mr-10 my-3 px-5 py-2 hover:brightness-150"
+											onClick={() => {
+												setIsOpen(false);
+											}}>
+											{navLink.name}
+										</Link>
+									))}
+									<div className="border-b-2 border-primary opacity-30" />
+
+									{socialLinks.map((navLink, index) => (
+										<Link
+											to={`/${navLink.link}`}
+											key={index}
+											className="ml-2 mr-10 my-3 px-5 py-2 hover:brightness-150"
+											onClick={() => {
+												setIsOpen(false);
+											}}>
+											{navLink.name}
+										</Link>
+									))}
+								</div>
 							</div>
-							<div className=" flex justify-end ">
-								{socialLinks.map((navLink, index) => (
-									<Link
-										to={`/${navLink.link}`}
-										key={index}
-										className={`mx-3 px-3 py-2 ${
-											index === socialLinks.length - 1
-												? "bg-secondary rounded-[5px]"
-												: " "
-										}`}>
-										{navLink.name}
-									</Link>
-								))}
-							</div>
-						</div>
-					</div>
-				)} */}
+						</motion.div>
+					)}
+				</AnimatePresence>
 			</div>
 		</motion.nav>
 	);
