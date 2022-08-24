@@ -1,3 +1,18 @@
 .gradient {
 	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.blur-one {
+	position: absolute;
+	width: 750px;
+	height: 750px;
+	left: -250px;
+	top: -250px;
+	background: #002853;
+	filter: blur(450px);
+	z-index: 0;
 }

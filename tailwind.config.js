@@ -8,6 +8,7 @@ module.exports = {
 				secondary: "#FF4820",
 				"main-bg": "#040C18",
 				"secondary-bg": "#052D56",
+				"secondary-text": "#3D6184",
 			},
 		},
 	},
