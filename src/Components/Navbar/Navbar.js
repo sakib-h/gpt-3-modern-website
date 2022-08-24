@@ -107,7 +107,7 @@ const Navbar = () => {
 							animate={{ x: 0, opacity: 1 }}
 							exit={{ x: "100vh", opacity: 0 }}
 							transition={{ duration: 0.5, type: "spring" }}>
-							<div className="nav-links lg:hidden flex flex-col justify-between items-center text-[1rem] 2xl:text-[1.5rem]">
+							<div className="nav-links lg:hidden flex flex-col justify-between items-center text-[1rem] md:text-[1.2rem]">
 								<div className="flex flex-col justify-start ">
 									{navLinks.map((navLink, index) => (
 										<Link
