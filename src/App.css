@@ -16,3 +16,9 @@
 	filter: blur(450px);
 	z-index: 0;
 }
+
+.border {
+	border-bottom: 4px solid;
+	width: 15%;
+	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}

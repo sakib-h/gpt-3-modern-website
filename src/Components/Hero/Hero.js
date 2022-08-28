@@ -3,7 +3,9 @@ import ai from "../../Assets/ai.png";
 import people from "../../Assets/people.png";
 const Hero = () => {
 	return (
-		<section className="mx-5 my-10 md:mx-10 xl:mx-20 2xl:mx-30 relative z-[10]">
+		<section
+			className="mx-5 mt-20 mb-10 md:mx-10 xl:mx-20 2xl:mx-30 relative z-[10]"
+			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<div className="basis-[50%] md:pr-5">
 					<h1 className="text-[3rem]  2xl:text-[5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
