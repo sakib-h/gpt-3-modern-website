@@ -6,6 +6,10 @@
 	text-fill-color: transparent;
 }
 
+.gradient-two {
+	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+
 .blur-one {
 	position: absolute;
 	width: 750px;

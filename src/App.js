@@ -1,5 +1,7 @@
 import "./App.css";
 import Brands from "./Components/Brands/Brands";
+import CaseStudies from "./Components/CaseStudies/CaseStudies";
+import GetStarted from "./Components/GetStarted/GetStarted";
 import GPT from "./Components/GPT/GPT";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
@@ -15,6 +17,8 @@ function App() {
 				<Brands />
 				<GPT />
 				<OpenAi />
+				<CaseStudies />
+				<GetStarted />
 			</div>
 		</div>
 	);
