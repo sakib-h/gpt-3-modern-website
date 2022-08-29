@@ -16,9 +16,31 @@
 	filter: blur(450px);
 	z-index: 0;
 }
+.blur-two {
+	position: absolute;
+	width: 580px;
+	height: 410px;
+	left: -320px;
+	top: -255px;
+	background: #0f4279;
+	filter: blur(160px);
+	z-index: 0;
+}
 
-.border {
-	border-bottom: 4px solid;
-	width: 15%;
-	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+.blur-three {
+	position: absolute;
+	width: 623px;
+	height: 558px;
+	right: -511px;
+	bottom: -455px;
+	background: #1b78de;
+	filter: blur(280px);
+	z-index: 0;
+}
+
+.gradient-border {
+	width: 20%;
+	padding: 2px 0;
+
+	background-image: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
 }

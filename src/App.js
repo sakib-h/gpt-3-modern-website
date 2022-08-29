@@ -3,6 +3,7 @@ import Brands from "./Components/Brands/Brands";
 import GPT from "./Components/GPT/GPT";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
+import OpenAi from "./Components/OpenAi/OpenAi";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<div className="blur-one" />
 				<Brands />
 				<GPT />
+				<OpenAi />
 			</div>
 		</div>
 	);
