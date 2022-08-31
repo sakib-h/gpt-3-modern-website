@@ -6,7 +6,7 @@ const OpenAi = () => {
 			className="my-20 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
 			id="open-ai">
 			<div className="flex flex-col  md:flex-row lg:justify-between items-start ">
-				<div className="md:pr-10">
+				<div className="md:pr-10 xl:pr-20 2xl:pr-32">
 					<h3 className="gradient text-[2rem] 2xl:text-[3rem] font-[800] mb-10">
 						The Future is Now and <br className="hidden md:block" />{" "}
 						You Just Need To Realize{" "}
@@ -31,7 +31,7 @@ const OpenAi = () => {
 							</h6>
 						</div>
 						<div>
-							<p className="max-w-[335px] xl:max-w-[450px]  2xl:max-w-[550px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
+							<p className="max-w-[335px] xl:max-w-[550px]  2xl:max-w-[650px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
 								From they fine john he give of rich he. They age
 								and draw mrs like. Improving end distrusts may
 								instantly was household applauded.
@@ -49,7 +49,7 @@ const OpenAi = () => {
 							</h6>
 						</div>
 						<div>
-							<p className="max-w-[335px] xl:max-w-[450px]  2xl:max-w-[550px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
+							<p className="max-w-[335px] xl:max-w-[550px]  2xl:max-w-[650px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
 								Considered sympathize ten uncommonly occasional
 								assistance sufficient not. Letter of on become
 								he tended active enable to.
@@ -67,7 +67,7 @@ const OpenAi = () => {
 							</h6>
 						</div>
 						<div>
-							<p className="max-w-[335px] xl:max-w-[450px]  2xl:max-w-[550px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
+							<p className="max-w-[335px] xl:max-w-[550px]  2xl:max-w-[650px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
 								Led ask possible mistress relation elegance eat
 								likewise debating. By message or am nothing
 								amongst chiefly address.
@@ -85,7 +85,7 @@ const OpenAi = () => {
 							</h6>
 						</div>
 						<div>
-							<p className="max-w-[335px] xl:max-w-[450px]  2xl:max-w-[550px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
+							<p className="max-w-[335px] xl:max-w-[550px]  2xl:max-w-[650px] text-primary text-[1rem] 2xl:text-[1.2rem] font-[500] leading-[1.5rem]">
 								Really boy law county she unable her sister.
 								Feet you off its like like six. Among sex are
 								leave law built now. In built table in an rapid

@@ -15,8 +15,8 @@ const brands = [
 const Brands = () => {
 	return (
 		<section className="mx-5 my-10 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-wrap justify-evenly items-center">
-			{brands.map((brand) => (
-				<div>
+			{brands.map((brand, index) => (
+				<div key={index}>
 					<img
 						src={brand.img}
 						alt={brand.id}

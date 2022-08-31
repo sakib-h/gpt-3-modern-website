@@ -71,14 +71,15 @@ const Footer = () => {
 
 					<div className="w-full flex flex-1 flex-row flex-wrap justify-between">
 						{navLinks.map((navLink, index) => (
-							<div className="flex flex-col pb-5">
+							<div className="flex flex-col pb-5" key={index}>
 								<h6 className="text-[14px] md:text-[18px] xl:-[text-24px] font-[700] mb-8">
 									{navLink.title}
 								</h6>
 								{navLink.links.map((link, index) => (
 									<a
 										href={link.url}
-										className="text-[12px] md:text-[16px] xl:-[text-20px] font-[400] mb-5 cursor-pointer">
+										className="text-[12px] md:text-[16px] xl:-[text-20px] font-[400] mb-5 cursor-pointer"
+										key={index}>
 										{link.name}
 									</a>
 								))}
