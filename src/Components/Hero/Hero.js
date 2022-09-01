@@ -1,10 +1,21 @@
 import React from "react";
 import ai from "../../Assets/ai.png";
 import people from "../../Assets/people.png";
+import { motion, AnimatePresence } from "framer-motion";
 const Hero = () => {
+	const headerVariants = {
+		whileInView: {
+			x: [-100, 0],
+			opacity: [0, 1],
+			transition: { duration: 0.3, ease: "easeInOut" },
+		},
+	};
 	return (
-		<section
-			className="mx-5 mt-20 mb-10 md:mx-10 xl:mx-20 2xl:mx-30 relative z-[10]"
+		<motion.section
+			variants={headerVariants}
+			whileInView={headerVariants.whileInView}
+			className="mx-5 mt-20 mb-10 md:mx-10 xl:mx-20 2xl:mx-30 relative
+				z-[10]"
 			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<div className="basis-[50%] md:pr-5">
@@ -43,7 +54,7 @@ const Hero = () => {
 					<img src={ai} alt="ai" className=" w-full" />
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

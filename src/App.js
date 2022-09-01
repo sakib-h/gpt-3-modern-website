@@ -8,7 +8,6 @@ import Hero from "./Components/Hero/Hero";
 import Library from "./Components/Library/Library";
 import Navbar from "./Components/Navbar/Navbar";
 import OpenAi from "./Components/OpenAi/OpenAi";
-
 function App() {
 	return (
 		<div className="App">
