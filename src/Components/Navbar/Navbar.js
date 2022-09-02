@@ -44,7 +44,7 @@ const Navbar = () => {
 			className="  sticky top-0 pt-5 w-full z-20 drop-shadow-lg "
 			initial={{ y: "-100vh", opacity: 0 }}
 			animate={{ y: 0, opacity: 1 }}
-			transition={{ delay: 0.3, type: "spring", duration: 0.5 }}>
+			transition={{ delay: 0.6, type: "spring", duration: 0.5 }}>
 			<div className=" mb-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30 px-10 py-5 rounded-b-md flex flex-row justify-between items-center bg-secondary-bg shadow-md ">
 				<div className="logo mr-3">
 					<img

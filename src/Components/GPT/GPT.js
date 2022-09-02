@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const features = [
 	{
 		name: "Chatbots",
@@ -20,10 +20,12 @@ const features = [
 
 const GPT = () => {
 	return (
-		<section
-			className="my-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
+		<motion.section
+			whileInView={{ x: [300, 0], opacity: [0, 1] }}
+			transition={{ duration: 0.5, delay: 0.5 }}
+			className="my-20 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
 			id="what-is-gpt">
-			<div className="bg-[#042c54]   px-[2rem] py-[3rem] relative overflow-hidden">
+			<div className=" bg-[#042c54]   px-[2rem] py-[3rem] relative overflow-hidden">
 				<div className="blur-two " />
 				<div className="pt-5 mb-20 flex w-full flex-col md:flex-row justify-between">
 					<div className="relative">
@@ -53,9 +55,9 @@ const GPT = () => {
 					</p>
 				</div>
 
-				<div className="my-10 flex flex-1 flex-col md:flex-row justify-between items-center">
+				<div className="my-10 flex flex-1 flex-col md:flex-row justify-between items-center md:items-start">
 					{features.map((feature, index) => (
-						<div className="relative py-5" key={index}>
+						<div className="relative md:px-5 py-5" key={index}>
 							<div className="gradient-border md:absolute top-[-10px] mb-2 md:mb-0" />
 							<h6 className="text-[2rem] font-[800] mb-8 2xl:text-[3rem]">
 								{feature.name}
@@ -68,7 +70,7 @@ const GPT = () => {
 				</div>
 				<div className="blur-three" />
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

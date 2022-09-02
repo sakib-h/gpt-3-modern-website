@@ -1,24 +1,21 @@
 import React from "react";
 import ai from "../../Assets/ai.png";
 import people from "../../Assets/people.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 const Hero = () => {
-	const headerVariants = {
-		whileInView: {
-			x: [-100, 0],
-			opacity: [0, 1],
-			transition: { duration: 0.3, ease: "easeInOut" },
-		},
-	};
 	return (
-		<motion.section
-			variants={headerVariants}
-			whileInView={headerVariants.whileInView}
-			className="mx-5 mt-20 mb-10 md:mx-10 xl:mx-20 2xl:mx-30 relative
-				z-[10]"
+		<section
+			className="mx-5 my-10 lg:my-20 md:mx-10 xl:mx-20 2xl:mx-30 relative
+					z-[10]"
 			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
-				<div className="basis-[50%] md:pr-5">
+				<motion.div
+					whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+					transition={{
+						duration: 0.4,
+						type: "spring",
+					}}
+					className="basis-[50%] md:pr-5">
 					<h1 className="text-[3rem]  2xl:text-[5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
 						Let’s Build Something <br className="hidden lg:block" />{" "}
 						amazing with GPT-3 <br className="hidden lg:block" />
@@ -49,12 +46,15 @@ const Hero = () => {
 							hours
 						</p>
 					</div>
-				</div>
-				<div className="basis-[50%] md:pl-5">
+				</motion.div>
+				<motion.div
+					whileInView={{ x: [100, 0], opacity: [0, 1] }}
+					transition={{ duration: 0.4, type: "spring" }}
+					className="basis-[50%] md:pl-5">
 					<img src={ai} alt="ai" className=" w-full" />
-				</div>
+				</motion.div>
 			</div>
-		</motion.section>
+		</section>
 	);
 };
 

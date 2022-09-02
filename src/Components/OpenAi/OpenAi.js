@@ -1,11 +1,13 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const OpenAi = () => {
 	return (
-		<section
+		<motion.section
+			whileInView={{ x: [-300, 0], opacity: [0, 1] }}
+			transition={{ duration: 0.5, delay: 0.5 }}
 			className="my-20 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
 			id="open-ai">
-			<div className="flex flex-col  md:flex-row lg:justify-between items-start ">
+			<div className="flex flex-col  md:flex-row md:justify-between items-start ">
 				<div className="md:pr-10 xl:pr-20 2xl:pr-32">
 					<h3 className="gradient text-[2rem] 2xl:text-[3rem] font-[800] mb-10">
 						The Future is Now and <br className="hidden md:block" />{" "}
@@ -95,7 +97,7 @@ const OpenAi = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

@@ -5,6 +5,8 @@ import atlassian from "../../Assets/atlassian.png";
 import dropbox from "../../Assets/dropbox.png";
 import shopify from "../../Assets/shopify.png";
 
+import { motion } from "framer-motion";
+
 const brands = [
 	{ img: google, id: "google", title: "Google" },
 	{ img: slack, id: "slack", title: "Slack" },
@@ -14,7 +16,10 @@ const brands = [
 ];
 const Brands = () => {
 	return (
-		<section className="mx-5 my-10 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-wrap justify-evenly items-center">
+		<motion.section
+			whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+			transition={{ duration: 0.5, delay: 0.3 }}
+			className="mx-5 my-10  lg:my-20 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-wrap justify-evenly items-center">
 			{brands.map((brand, index) => (
 				<div key={index}>
 					<img
@@ -25,7 +30,7 @@ const Brands = () => {
 					/>
 				</div>
 			))}
-		</section>
+		</motion.section>
 	);
 };
 
