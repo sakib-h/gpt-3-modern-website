@@ -18,15 +18,15 @@ const Brands = () => {
 	return (
 		<motion.section
 			whileInView={{ scale: [0, 1], opacity: [0, 1] }}
-			transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
-			className="mx-5 my-10  lg:my-20 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-wrap justify-evenly items-center">
+			transition={{ duration: 0.5, type: "tween" }}
+			className="mx-5 my-10  lg:my-32 md:mx-10 xl:mx-20 2xl:mx-32 flex flex-wrap justify-evenly items-center">
 			{brands.map((brand, index) => (
 				<div key={index}>
 					<img
 						src={brand.img}
 						alt={brand.id}
 						title={brand.title}
-						className="py-5"
+						className="py-5 w-ful cursor-pointer hover:brightness-150"
 					/>
 				</div>
 			))}

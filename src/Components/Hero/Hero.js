@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	return (
 		<section
-			className="mx-5 my-10 lg:my-20 md:mx-10 xl:mx-20 2xl:mx-32 relative z-[10]"
+			className="mx-5 my-10 lg:my-32 md:mx-10 xl:mx-20 2xl:mx-32 relative z-[10]"
 			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<motion.div
