@@ -1,19 +1,26 @@
 import React from "react";
 import possibilityImg from "../../Assets/possibility.png";
+import { motion } from "framer-motion";
 const CaseStudies = () => {
 	return (
 		<section
 			className="my-10 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
 			id="case-studies">
 			<div className="flex flex-col md:flex-row items-center justify-between">
-				<div className="flex-1">
+				<motion.div
+					whileInView={{ x: [-300, 0] }}
+					transition={{ duration: 0.5 }}
+					className="flex-1">
 					<img
 						src={possibilityImg}
 						alt="possibility"
 						className="w-[80%] mx-auto mb-5 md:mb-0"
 					/>
-				</div>
-				<div className="flex-1">
+				</motion.div>
+				<motion.div
+					className="flex-1"
+					whileInView={{ x: [300, 0] }}
+					transition={{ duration: 0.5 }}>
 					<p className="text-[#71E5FF] font-[500] text-[1rem] leading-[30px] mb-5">
 						Request Early Access to Get Started
 					</p>
@@ -31,7 +38,7 @@ const CaseStudies = () => {
 					<p className="text-[#FF8A71] font-[500] text-[1rem] leading-[30px] cursor-pointer mb-10">
 						Request Early Access to Get Started
 					</p>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

@@ -4,6 +4,7 @@ import blog02 from "../../Assets/blog02.png";
 import blog03 from "../../Assets/blog03.png";
 import blog04 from "../../Assets/blog04.png";
 import blog05 from "../../Assets/blog05.png";
+import { motion } from "framer-motion";
 const Library = () => {
 	return (
 		<section className="my-10 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-col">
@@ -15,7 +16,10 @@ const Library = () => {
 			</div>
 			<div className="flex flex-col-reverse  lg:flex-row">
 				<div className="flex-[0.75] mb-10 lg:mb-0 lg:my-0  lg:mr-[2rem]">
-					<div className="w-full h-full flex flex-col bg-[#042C54]">
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						transition={{ type: "spring", stiffness: 150 }}
+						className="w-full h-full flex flex-col bg-[#042C54]">
 						<div className="w-full h-full">
 							<img
 								src={blog01}
@@ -37,10 +41,13 @@ const Library = () => {
 								Read Full Article
 							</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 				<div className="flex-1 md:grid gap-[2rem] grid-cols-2	md:mb-[2rem] lg:mb-0">
-					<div className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						transition={{ type: "spring", stiffness: 150 }}
+						className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
 						<div className="w-full h-full">
 							<img
 								src={blog02}
@@ -62,9 +69,12 @@ const Library = () => {
 								Read Full Article
 							</p>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						transition={{ type: "spring", stiffness: 150 }}
+						className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
 						<div className="w-full h-full">
 							<img
 								src={blog03}
@@ -86,9 +96,12 @@ const Library = () => {
 								Read Full Article
 							</p>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						transition={{ type: "spring", stiffness: 150 }}
+						className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
 						<div className="w-full h-full">
 							<img
 								src={blog04}
@@ -110,9 +123,12 @@ const Library = () => {
 								Read Full Article
 							</p>
 						</div>
-					</div>
+					</motion.div>
 
-					<div className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						transition={{ type: "spring", stiffness: 150 }}
+						className="w-full h-full flex flex-col bg-[#042C54] mb-10 lg:mb-0">
 						<div className="w-full h-full">
 							<img
 								src={blog05}
@@ -134,7 +150,7 @@ const Library = () => {
 								Read Full Article
 							</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

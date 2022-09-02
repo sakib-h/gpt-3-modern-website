@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	return (
 		<section
-			className="mx-5 my-10 lg:my-20 md:mx-10 xl:mx-20 2xl:mx-30 relative
-					z-[10]"
+			className="mx-5 my-10 lg:my-20 md:mx-10 xl:mx-20 2xl:mx-32 relative z-[10]"
 			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<motion.div
@@ -15,13 +14,13 @@ const Hero = () => {
 						duration: 0.4,
 						type: "spring",
 					}}
-					className="basis-[50%] md:pr-5">
-					<h1 className="text-[3rem]  2xl:text-[5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
+					className="basis-[55%] md:mr-10">
+					<h1 className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
 						Let’s Build Something <br className="hidden lg:block" />{" "}
 						amazing with GPT-3 <br className="hidden lg:block" />
 						OpenAI
 					</h1>
-					<p className="text-primary mb-[2rem] text-[1.2rem]  2xl:text-[1.5rem]">
+					<p className="text-primary mb-[2rem] text-[1.1rem] md:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.5rem]">
 						Yet bed any for traveling assistance indulgence
 						unpleasing. Not thoughts all exercise blessing.
 						Indulgence way everything joy alteration boisterous the
@@ -41,7 +40,7 @@ const Hero = () => {
 					</div>
 					<div className="flex flex-row items-center justify-start mb-[2rem]">
 						<img src={people} alt="people" className="w-[30%]" />
-						<p className="ml-3 font-[500] text-[12px] xl:text-[16px] 2xl:text-[24px]">
+						<p className="ml-3 font-[500] text-[12px] md:text-[14px] xl:text-[16px] 2xl:text-[18px]">
 							1,600 people requested access a visit in last 24
 							hours
 						</p>
@@ -50,7 +49,7 @@ const Hero = () => {
 				<motion.div
 					whileInView={{ x: [100, 0], opacity: [0, 1] }}
 					transition={{ duration: 0.4, type: "spring" }}
-					className="basis-[50%] md:pl-5">
+					className="basis-[45%] md:pl-5">
 					<img src={ai} alt="ai" className=" w-full" />
 				</motion.div>
 			</div>

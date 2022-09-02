@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Assets/logo.svg";
+import { motion } from "framer-motion";
 const Footer = () => {
 	const navLinks = [
 		{
@@ -48,11 +49,14 @@ const Footer = () => {
 				</div>
 
 				<div className="mb-[5rem]">
-					<button
+					<motion.button
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.95 }}
+						transition={{ type: "spring", stiffness: 150 }}
 						type="button"
 						className="px-8 py-5 border-2 text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] leading-[21px]">
 						Request Early Access
-					</button>
+					</motion.button>
 				</div>
 
 				<div className="w-full  flex flex-col lg:flex-row justify-between items-center  lg:items-start">

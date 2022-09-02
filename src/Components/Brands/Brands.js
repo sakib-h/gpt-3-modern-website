@@ -18,7 +18,7 @@ const Brands = () => {
 	return (
 		<motion.section
 			whileInView={{ scale: [0, 1], opacity: [0, 1] }}
-			transition={{ duration: 0.5, delay: 0.3 }}
+			transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
 			className="mx-5 my-10  lg:my-20 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-wrap justify-evenly items-center">
 			{brands.map((brand, index) => (
 				<div key={index}>
