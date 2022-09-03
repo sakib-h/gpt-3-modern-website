@@ -26,7 +26,7 @@ const Footer = () => {
 			title: "Get in Touch",
 			links: [
 				{
-					name: "Crechterwoord K12 182 DK Alknjkcb",
+					name: "Crechterwoord K12 182 DK",
 					url: "/",
 				},
 				{ name: "+8801303-909469", url: "/" },
@@ -39,10 +39,10 @@ const Footer = () => {
 	];
 
 	return (
-		<footer className="mt-10  bg-[/031B34] ">
+		<footer className="mt-10  bg-[#031B34] ">
 			<div className="py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30  flex flex-col items-center">
 				<div className="mt-[5rem] mb-[2rem]">
-					<h1 className="text-[3rem]  2xl:text-[5rem] font-[800] gradient tracking-[-0.04em]  text-center">
+					<h1 className="text-[2rem] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-[800] gradient tracking-[-0.04em]  text-center">
 						Do you want to step in to the{" "}
 						<br className="hidden lg:block" /> future before others
 					</h1>
@@ -60,23 +60,23 @@ const Footer = () => {
 				</div>
 
 				<div className="w-full  flex flex-col lg:flex-row justify-between items-center  lg:items-start">
-					<div className="flex flex-col items-center lg:items-start  lg:mr-20">
+					<div className="basis-[30%] flex flex-col items-center lg:items-start  lg:mr-20">
 						<img
 							src={logo}
 							alt="GPT-3"
-							className="mb-10  lg:mb-8 w-[120px] md:w-[150px] xl-[w-170px] 2xl:w-[200px]"
+							className="mb-10  lg:mb-8 w-[120px] md:w-[150px] xl-[w-165px] 2xl:w-[180px]"
 						/>
-						<p className=" pb-10 text-[1rem] md:-[1.2rem] xl:-[1.5rem] mb-10 lg:mb-5">
+						<p className=" pb-10 text-[0.9rem] md:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem] mb-10 lg:mb-5">
 							Crechterwoord K12 182 DK{" "}
 							<br className="hidden lg:block" /> Alknjkcb, All
 							Rights Reserved
 						</p>
 					</div>
 
-					<div className="w-full flex flex-1 flex-row flex-wrap justify-between">
+					<div className="basis-[30%]  w-full flex flex-1 flex-row flex-wrap justify-between">
 						{navLinks.map((navLink, index) => (
 							<div className="flex flex-col pb-5" key={index}>
-								<h6 className="text-[14px] md:text-[18px] xl:-[text-24px] font-[700] mb-8">
+								<h6 className="text-[16px] md:text-[20px] xl:-[text-24px] font-[800] mb-8">
 									{navLink.title}
 								</h6>
 								{navLink.links.map((link, index) => (

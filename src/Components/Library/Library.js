@@ -9,8 +9,8 @@ const Library = () => {
 	return (
 		<section className="my-10 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30 flex flex-col">
 			<div className="w-full text-left">
-				<h1 className="text-[3rem]  2xl:text-[5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
-					A lot is happening, <br className="hidden md:block mb-10" />
+				<h1 className="text-[2rem] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem]  font-[800] gradient tracking-[-0.04em] mb-[2rem]">
+					A lot is happening, <br className="hidden md:block " />
 					We are blogging about it.
 				</h1>
 			</div>
@@ -24,20 +24,20 @@ const Library = () => {
 							<img
 								src={blog01}
 								alt="blog-img"
-								className="w-full h-auto"
+								className="w-full h-auto object-contain"
 							/>
 						</div>
 						<div className="flex flex-col justify-between px-[1.5rem] py-[1rem] h-full">
 							<div>
-								<p className="text-[12px] font-[700] leading-[35px]">
+								<p className="text-[11px] md:text-[12px] xl:text-[14px]    font-[700] leading-[35px] mb-5">
 									Sep 26, 2021
 								</p>
-								<h3 className=" text-[18px] md:text-[26px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer">
+								<h3 className=" text-[16px] md:text-[22px] xl:text-[24px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer mb-5">
 									GPT-3 and Open AI is the future. Let us
 									explore how it is?
 								</h3>
 							</div>
-							<p className="text-[12px] font-[700] leading-[35px] cursor-pointer">
+							<p className="text-[11px] md:text-[12px] xl:text-[14px]   font-[700] leading-[35px] cursor-pointer">
 								Read Full Article
 							</p>
 						</div>
@@ -52,20 +52,20 @@ const Library = () => {
 							<img
 								src={blog02}
 								alt="blog-img"
-								className="w-full h-auto"
+								className="w-full h-auto object-contain"
 							/>
 						</div>
 						<div className="flex flex-col justify-between px-[1.5rem] py-[1rem] h-full">
 							<div>
-								<p className="text-[12px] font-[700] leading-[35px]">
+								<p className=" text-[11px] md:text-[12px] xl:text-[14px]    font-[700] leading-[35px] mb-5">
 									Sep 26, 2021
 								</p>
-								<h3 className=" text-[18px] md:text-[26px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer">
+								<h3 className="text-[16px] md:text-[22px] xl:text-[24px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer mb-5">
 									GPT-3 and Open AI is the future. Let us
 									explore how it is?
 								</h3>
 							</div>
-							<p className="text-[12px] font-[700] leading-[35px] cursor-pointer">
+							<p className="text-[11px] md:text-[12px] xl:text-[14px]   font-[700] leading-[35px] cursor-pointer">
 								Read Full Article
 							</p>
 						</div>
@@ -79,20 +79,20 @@ const Library = () => {
 							<img
 								src={blog03}
 								alt="blog-img"
-								className="w-full h-auto"
+								className="w-full h-auto object-contain"
 							/>
 						</div>
 						<div className="flex flex-col justify-between px-[1.5rem] py-[1rem] h-full">
 							<div>
-								<p className="text-[12px] font-[700] leading-[35px]">
+								<p className="text-[11px] md:text-[12px] xl:text-[14px]    font-[700] leading-[35px] mb-5">
 									Sep 26, 2021
 								</p>
-								<h3 className=" text-[18px] md:text-[26px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer">
+								<h3 className=" text-[16px] md:text-[22px] xl:text-[24px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer mb-5">
 									GPT-3 and Open AI is the future. Let us
 									explore how it is?
 								</h3>
 							</div>
-							<p className="text-[12px] font-[700] leading-[35px] cursor-pointer">
+							<p className="text-[11px] md:text-[12px] xl:text-[14px]   font-[700] leading-[35px] cursor-pointer">
 								Read Full Article
 							</p>
 						</div>
@@ -106,20 +106,20 @@ const Library = () => {
 							<img
 								src={blog04}
 								alt="blog-img"
-								className="w-full h-auto"
+								className="w-full h-auto object-contain"
 							/>
 						</div>
 						<div className="flex flex-col justify-between px-[1.5rem] py-[1rem] h-full">
 							<div>
-								<p className="text-[12px] font-[700] leading-[35px]">
+								<p className="text-[11px] md:text-[12px] xl:text-[14px]    font-[700] leading-[35px] mb-5">
 									Sep 26, 2021
 								</p>
-								<h3 className=" text-[18px] md:text-[26px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer">
+								<h3 className=" text-[16px] md:text-[22px] xl:text-[24px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer mb-5">
 									GPT-3 and Open AI is the future. Let us
 									explore how it is?
 								</h3>
 							</div>
-							<p className="text-[12px] font-[700] leading-[35px] cursor-pointer">
+							<p className="text-[11px] md:text-[12px] xl:text-[14px]   font-[700] leading-[35px] cursor-pointer">
 								Read Full Article
 							</p>
 						</div>
@@ -133,20 +133,20 @@ const Library = () => {
 							<img
 								src={blog05}
 								alt="blog-img"
-								className="w-full h-auto"
+								className="w-full h-auto object-contain"
 							/>
 						</div>
 						<div className="flex flex-col justify-between px-[1.5rem] py-[1rem] h-full">
 							<div>
-								<p className="text-[12px] font-[700] leading-[35px]">
+								<p className="text-[11px] md:text-[12px] xl:text-[14px]    font-[700] leading-[35px] mb-5">
 									Sep 26, 2021
 								</p>
-								<h3 className=" text-[18px] md:text-[26px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer">
+								<h3 className=" text-[16px] md:text-[22px] xl:text-[24px] font-[800] leading-[25px] md:leading-[30px] mb-5rem cursor-pointer mb-5">
 									GPT-3 and Open AI is the future. Let us
 									explore how it is?
 								</h3>
 							</div>
-							<p className="text-[12px] font-[700] leading-[35px] cursor-pointer">
+							<p className="text-[11px] md:text-[12px] xl:text-[14px]   font-[700] leading-[35px] cursor-pointer">
 								Read Full Article
 							</p>
 						</div>

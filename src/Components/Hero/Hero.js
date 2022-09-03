@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
 	return (
 		<section
-			className="mx-5 my-10 lg:my-32 md:mx-10 xl:mx-20 2xl:mx-32 relative z-[10]"
+			className="mx-5 my-10 lg:my-32 md:mx-10 xl:mx-20 2xl:mx-32 relative z-[10] overflow-hidden"
 			id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<motion.div
@@ -15,7 +15,7 @@ const Hero = () => {
 						type: "spring",
 					}}
 					className="basis-[55%] md:mr-10">
-					<h1 className="text-[3rem] md:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
+					<h1 className="text-[2rem] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4rem] font-[800] gradient tracking-[-0.04em] mb-[2rem]">
 						Let’s Build Something <br className="hidden lg:block" />{" "}
 						amazing with GPT-3 <br className="hidden lg:block" />
 						OpenAI

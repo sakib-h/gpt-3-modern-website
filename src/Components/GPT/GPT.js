@@ -32,7 +32,7 @@ const GPT = () => {
 						</h6>
 					</div>
 					<div>
-						<p className="md:max-w-[500px] 2xl:max-w-[800px] text-[0.9rem] md:text-[1.2rem] xl:text-[1.3rem]  2xl:text-[1.4rem]">
+						<p className="md:max-w-[500px] 2xl:max-w-[850px] text-[0.9rem] md:text-[1.2rem] xl:text-[1.3rem]  2xl:text-[1.4rem]">
 							We so opinion friends me message as delight. Whole
 							front do of plate heard oh ought. His defective nor
 							convinced residence own. Connection has put

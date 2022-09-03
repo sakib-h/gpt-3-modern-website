@@ -1,15 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 const OpenAi = () => {
 	return (
-		<motion.section
-			whileInView={{ x: [-300, 0], opacity: [0, 1] }}
-			transition={{ duration: 0.5, delay: 0.5 }}
+		<section
 			className="my-20 py-10 mx-5 md:mx-10 xl:mx-20 2xl:mx-30"
 			id="open-ai">
 			<div className="flex flex-col  md:flex-row md:justify-between items-start ">
-				<div className="md:pr-10 xl:pr-20 2xl:pr-32">
-					<h3 className="gradient text-[2rem] 2xl:text-[3rem] font-[800] mb-10">
+				<div className="md:mr-10 xl:pr-20 2xl:pr-32">
+					<h3 className="gradient text-[2rem] lg:-text[2.5rem]  2xl:text-[3rem] font-[800] mb-10">
 						The Future is Now and <br className="hidden md:block" />{" "}
 						You Just Need To Realize{" "}
 						<br className="hidden md:block " /> It. Step into Future
@@ -17,7 +14,7 @@ const OpenAi = () => {
 						Happen.
 					</h3>
 
-					<p className="text-[#FF8A71] font-[500] text-[1rem] leading-[30px] cursor-pointer mb-10">
+					<p className="text-[#FF8A71] font-[500] text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem] leading-[30px] cursor-pointer mb-10">
 						Request Early Access to Get Started
 					</p>
 				</div>
@@ -97,7 +94,7 @@ const OpenAi = () => {
 					</div>
 				</div>
 			</div>
-		</motion.section>
+		</section>
 	);
 };
 
