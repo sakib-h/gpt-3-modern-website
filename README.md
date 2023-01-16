@@ -1,4 +1,4 @@
-#GPT-3 Modern Website Desgin
+# GPT-3 Modern Website Desgin
 
 Live: https://gpt-3-modern.netlify.app/
 
